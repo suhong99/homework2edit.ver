@@ -40,7 +40,7 @@ function Todo(props) {
   return (
     <TodoContainer>
       <Link to={`/${props.todo.id}`}>
-        <span style={{ cursor: "pointer" }}>{props.todo.id}상세보기</span>
+        <span style={{ cursor: "pointer" }}>상세보기</span>
       </Link>
       <TodoTitle> {props.todo.title}</TodoTitle>
       <TodoContent>{props.todo.content}</TodoContent>

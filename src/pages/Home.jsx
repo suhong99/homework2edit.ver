@@ -69,12 +69,12 @@ const Home = () => {
     todolist.forEach((value) => {
       if (value.id === id) {
         value.isDone
-          ? (totalcost -= value.timecost)
-          : (totalcost += value.timecost);
+          ? (totalcost -= value.timecost * 1)
+          : (totalcost += value.timecost * 1);
       }
     });
     todolist.forEach((value) => {
-      value.isDone && (totalcost += value.timecost);
+      value.isDone && (totalcost += value.timecost * 1);
     });
     console.log(totalcost);
     dispatch(timeSum(totalcost));
